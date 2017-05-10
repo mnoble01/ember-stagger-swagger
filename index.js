@@ -49,7 +49,7 @@ module.exports = {
 
     const Funnel = require('broccoli-funnel');
     const mergeTrees = require('broccoli-merge-trees');
-    const stylesPath = path.join(this.project.nodeModulesPath, this.name, 'app', 'styles');
+    const stylesPath = path.join(__dirname, 'app', 'styles');
 
     const cssTree = new Funnel(stylesPath, { include: [MATCH_CSS] });
 
